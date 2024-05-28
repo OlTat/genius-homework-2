@@ -1,0 +1,727 @@
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-regular.woff2")
+      format("woff2"),
+    url("../fonts/roboto-v30-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-500.woff2")
+      format("woff2"),
+    url("../fonts/roboto-v30-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-500.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-700.woff2")
+      format("woff2"),
+    url("../fonts/roboto-v30-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-700.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-weight: 400;
+  src: url("../fonts/play-v19-cyrillic_cyrillic-ext_greek_latin_latin-ext_vietnamese-regular.woff2")
+      format("woff2"),
+    url("../fonts/play-v19-cyrillic_cyrillic-ext_greek_latin_latin-ext_vietnamese-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-weight: 700;
+  src: url("../fonts/play-v19-cyrillic_cyrillic-ext_greek_latin_latin-ext_vietnamese-700.woff2")
+      format("woff2"),
+    url("../fonts/play-v19-cyrillic_cyrillic-ext_greek_latin_latin-ext_vietnamese-700.woff")
+      format("woff");
+}
+
+:root {
+  --color-primary-dark: #011c44;
+  --color-primary-light: #2b7fff;
+  --color-brand-dark: #000000;
+  --color-brand-light: #ffffff;
+  --color-normal-dark: #011f4a;
+  --color-normal-light: #747272;
+  --color-consultation: #4a4a4a;
+}
+
+/* Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-primary-dark);
+  background-color: var(--color-brand-light);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.17;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+a {
+  display: inline-block;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Link */
+.link {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.link:hover {
+  color: var(--color-primary-light);
+}
+
+/* Header */
+.header {
+  background-color: lightgray;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 240px;
+  height: 100%;
+  min-height: 106px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 240px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header-mess {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.header-address {
+  fill: var(--color-primary-dark);
+  background-color: transparent;
+}
+
+.header-address:hover {
+  fill: var(--color-primary-light);
+}
+
+/* Hero section */
+.hero-section {
+  padding: 16.52px 0 126.48px 0;
+  background-image: url("../images/аppointment_doctor.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 529px;
+  margin: 0 605px 0 106px;
+}
+
+.clinic {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  color: var(--color-primary-light);
+  font-family: "Play", sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.8;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+/* Batton */
+.button {
+  padding: 16px 32px;
+  color: var(--color-brand-light);
+  font-weight: 600;
+  background-color: var(--color-primary-light);
+  border: 2px solid var(--color-primary-light);
+  border-radius: 32px;
+  cursor: pointer;
+  margin-bottom: 14px;
+}
+
+.button:hover {
+  color: var(--color-primary-dark);
+  background-color: transparent;
+}
+
+.consultation {
+  color: var(--color-consultation);
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Advantates section */
+.section-title {
+  color: var(--color-primary-light);
+  font-family: "Play", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+.title {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+/* Reincarnate section */
+.reincarnate-section {
+  padding: 40px 0 128px 0;
+}
+
+.reincarnate-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.reincarnate-content {
+  max-width: 709px;
+}
+
+.accent {
+  color: var(--color-primary-dark);
+  text-transform: none;
+}
+
+.reincarnate {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.reincarnate .standart-title {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.service {
+  margin-bottom: 40px;
+}
+
+.services {
+  text-transform: capitalize;
+  max-width: 529px;
+}
+
+.parag {
+  max-width: 670px;
+}
+
+.standard {
+  margin-bottom: 0;
+}
+
+.reincarnate-images {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 499px;
+}
+
+.reincarnate-images::after,
+.reincarnate-imag1::after,
+.reincarnate-imag2::before {
+  position: absolute;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.reincarnate-images::after {
+  width: 40px;
+  height: 40px;
+  top: 32px;
+  left: 485px;
+  background-image: url('../images/Star 2.png');
+  color: var(--color-primary-light);
+}
+
+.reincarnate-imag1 {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.reincarnate-imag1::after {
+  width: 64px;
+  height: 64px;
+  top: 336px;
+  left: 117px;
+  background-image: url('../images/Star 1.png');
+  color: var(--color-normal-dark);
+}
+
+.reincarnate-imag2 {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reincarnate-imag2::before {
+  width: 16px;
+  height: 16px;
+  bottom: 405px;
+  right: 6px;
+  background-image: url('../images/Star 3.png');
+  color: var(--color-normal-light);
+}
+
+.reincarnate-foto {
+  border-radius: 50%;
+}
+
+/* Choice section */
+.containers-choice {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.choice-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choice-item {
+  flex-basis: calc((100% - 112px) / 3);
+}
+
+.choice-card {
+  width: 100%;
+  max-width: 316px;
+  height: 100%;
+  max-height: 181px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 32px;
+  border: 1px solid lightgray; /* remove */
+  border-radius: 32px;
+}
+
+.choice-logo {
+  width: 48px;
+  margin: 0 auto;
+}
+
+.advantages-title {
+  color: var(--color-brand-dark);
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* Procedures section */
+.containers-procedur {
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.procedures-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1296px;
+}
+
+.procedures-list {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  max-width: 1064px;
+}
+
+.procedures-item {
+  flex-basis: calc((100% - 32px) / 3);
+}
+
+.procedures-card {
+  border: 1px solid lightgray; /* remove */
+  margin: 0 auto;
+  padding: 372px 77px 32px 115px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  max-height: 456px;
+  border-radius: 4px 120px 4px 120px;
+}
+
+.cream {
+  background-image: url("../images/face_cream.jpg");
+}
+
+.syringe {
+  background-image: url("../images/face_syringe.jpg");
+}
+
+.spatula {
+  background-image: url("../images/face_spatula.jpg");
+}
+
+.face-title {
+  max-width: 152px;
+  max-height: 52px;
+  color: var(--color-brand-light);
+  font-size: 22px;
+  line-height: 1.18;
+  text-align: center;
+  opacity: 0;
+}
+
+.face-title:hover {
+  opacity: 1;
+}
+
+/* Carousel */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: var(--color-primary-dark);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-light);
+  fill: var(--color-brand-light);
+  border: none;
+}
+
+/* Contact section */
+.section-contact {
+  padding-bottom: 96px;
+}
+
+.containers-contact {
+  margin: 0 auto;
+  padding: 0 24px 0 76px;
+}
+
+.title-contact {
+  width: 100%;
+  max-width: 1059px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+  max-width: 1059px;
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 32px;
+}
+
+.contact-form {
+  background-color: var(--color-normal-dark);
+  border-radius: 32px;
+  width: 100%;
+  max-width: 422px;
+  padding: 48px 54px;
+}
+
+.contact-title {
+  color: var(--color-brand-light);
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.contact-title .present {
+  color: var(--color-primary-light);
+}
+
+.contacts-list {
+  color: var(--color-brand-light);
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 310px;
+  height: 100%;
+  max-height: 301px;
+  align-items: center;
+}
+
+.list-content {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  max-width: 310px;
+  height: 100%;
+  max-height: 52px;
+  border: 2px solid var(--color-normal-light);
+  border-radius: 32px;
+  padding: 18px 32px;
+}
+
+.form-content {
+  margin-bottom: 0;
+}
+
+.list-button {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.button2 {
+  padding: 16px 32px;
+  color: var(--color-brand-light);
+  font-weight: 600;
+  background-color: var(--color-primary-light);
+  border: 2px solid var(--color-primary-light);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.contacts-list .button2:hover {
+  background-color: transparent;
+}
+
+.privacy-policy {
+  color: var(--color-normal-light);
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  background-color: var(--color-normal-dark);
+  padding: 56px 0;
+}
+
+.footer::after {
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 278px;
+  height: 213px;
+  top: 126px;
+  right: 0;
+  background-image: url('../images/bottle_medicine.png');
+  content: '';
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.address-info {
+  gap: 20px;
+}
+
+.footer-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link-foot {
+  color: var(--color-brand-light);
+  text-decoration: none;
+}
+
+.link-foot:hover {
+  color: var(--color-primary-light);
+}
+
+.footer-mess {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.address-icon {
+  fill: var(--color-brand-light);
+}
+
+.address-icon:hover {
+  fill: var(--color-primary-light);
+}
+
+.privacy-policy-foot {
+  color: var(--color-normal-light);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: relative;
+  width: 723px;
+  height: 681px;
+  background-color: var(--color-primary-dark);
+  border-radius: 48px;
+  padding: 42px 144px;
+}
+
+.backdrop.is-hidden {
+  /* display: none; */
+  opacity: 0.5;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 42px;
+  right: 42px;
+  background-color: var(--color-primary-dark);
+  border: none;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+}
+
+.modal-form {
+  background-color: var(--color-primary-dark);
+  border-radius: 0;
+  width: 100%;
+  max-width: 435px;
+  padding: 0;
+}
+
+.modal-title {
+  color: var(--color-brand-light);
+  font-family: "Play", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.modal-contact {
+  padding: 0 62.5px;
+  height: 100%;
+  min-height: 409px;
+}
+
+.list-modal {
+  gap: 24px;
+}
